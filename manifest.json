@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+
+    "name": "Remove-Twitter-Weibo-Ad",
+    "description": "A Chrome Extension for removing ads from Twitter and Weibo. Logo from https://thenounproject.com/monstercritic",
+    "version": "1.0",
+
+    "permissions": [
+        "http://*/*","https://*/*",
+        "tabs",
+        "notifications",
+        "alarms"
+    ],
+    "browser_action": {
+    "default_icon": "logo.png"
+    }
+    ,
+    "background": 
+    {
+        "scripts": ["background.js"]
+    },
+    "web_accessible_resources": [
+        "logo.png"
+    ]
+    
+    ,
+    "content_scripts": [
+        {
+             "matches": ["https://twitter.com/*","https://www.facebook.com/","http://weibo.com/*","http://www.weibo.com/*","https://weibo.com/*","https://www.weibo.com/*"],
+             "css": ["app.css"],
+             "js": ["jquery-3.2.1.min.js","app.js"]
+        }
+    ]
+    
+    
+}

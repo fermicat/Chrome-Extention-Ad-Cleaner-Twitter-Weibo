@@ -1,0 +1,35 @@
+/***************************** for Twitter ******************************/
+
+[data-promoted="true"], .dashboard-right 
+{
+	display: none;
+}
+
+
+
+/***************************** for Weibo ********************************/
+
+[feedtype="ad"], [node-type="recommendTopic"]
+{
+	display: none !important;
+}
+
+.WB_main_r, #v6_pl_content_biztips, .gn_search_v2 span.placeholder, .gn_topmenulist_search
+{
+	display: none !important;
+}
+
+.gn_nav_list li:not(:last-child) {
+	display: none !important;
+}
+
+.WB_frame
+{
+	padding: 50px 0 0 0 !important;
+	padding-left: 100px !important;
+}
+
+.WB_main_c {
+    width: 700px !important;
+    
+}

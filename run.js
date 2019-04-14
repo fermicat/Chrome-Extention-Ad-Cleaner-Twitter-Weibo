@@ -1,0 +1,1 @@
+alert("Version 1.0: \n Remove Ads on Weibo and Twitter.");
